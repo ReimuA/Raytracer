@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include <stdexcept>
+#include "IObject.hpp"
 #include "Parser.hpp"
 
 int main(int argc, char **argv)

@@ -17,7 +17,9 @@ SRC 		=	Src/
 
 SRCS		=					\
 			$(SRC)Main.cpp 			\
+			$(SRC)Color.cpp		\
 			$(SRC)Parser.cpp		\
+			$(SRC)Vector3f.cpp		\
 			$(SRC)StringHelper.cpp		\
 
 OBJS 		=	$(SRCS:.cpp=.o)
