@@ -17,6 +17,14 @@ public:
 	Vector3f(const Vector3f &vector);
 	~Vector3f();
 
+	double getlength() const;
+	Vector3f normalize() const;
+	double dot(const Vector3f &vector) const;
+	Vector3f cross(const Vector3f &vector) const;
+
+
 	Vector3f operator+(const Vector3f& vector) const;
 	Vector3f operator-(const Vector3f& vector) const;
+	Vector3f operator*(const double &n) const;
+	Vector3f operator/(const double &n) const;
 };
