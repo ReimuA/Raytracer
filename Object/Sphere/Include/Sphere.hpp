@@ -24,4 +24,4 @@ public:
 };
 
 std::string getObjectName() __asm__("getObjectName");
-IObject *createObject(std::map<std::string, std::string> map) __asm__("createObject");
+IObject *createObject(const std::map<std::string, std::string> &map) __asm__("createObject");

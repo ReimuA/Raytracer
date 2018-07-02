@@ -8,6 +8,8 @@
 #include "Color.hpp"
 #include "Vector3f.hpp"
 
+#pragma once
+
 class IObject {
 public:
 	IObject() = default;

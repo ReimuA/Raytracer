@@ -5,8 +5,9 @@
 #include <string>
 #include <iostream>
 #include <stdexcept>
-#include "IObject.hpp"
 #include "Parser.hpp"
+#include "IObject.hpp"
+#include "ObjectFactory.hpp"
 
 int main(int argc, char **argv)
 {

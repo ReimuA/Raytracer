@@ -7,7 +7,7 @@
 #include <string>
 #include "Sphere.hpp"
 
-IObject *createObject(std::map<std::string, std::string> map)
+IObject *createObject(const std::map<std::string, std::string> &map)
 {
 	return new Sphere(Vector3f(3, 3, 3), 5, Color(122, 122, 122, 255), false);
 }
