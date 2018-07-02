@@ -16,8 +16,9 @@ CPPFLAGS	+=	-Wall -Wextra
 SRC 		=	Src/
 
 SRCS		=					\
+			$(SRC)Ray.cpp 			\
 			$(SRC)Main.cpp 			\
-			$(SRC)Color.cpp		\
+			$(SRC)Color.cpp			\
 			$(SRC)Parser.cpp		\
 			$(SRC)Vector3f.cpp		\
 			$(SRC)StringHelper.cpp		\
