@@ -19,9 +19,12 @@ CPPFLAGS	+=	-I../../Engine/Include
 LDFLAGS		=	-shared
 
 SRC 		=	Src/
+ENGINE_SRC 	=	../../Engine/Src/
 
 SRCS		=					\
 			$(SRC)Sphere.cpp		\
+			$(ENGINE_SRC)Color.cpp		\
+			$(ENGINE_SRC)Vector3f.cpp	\
 
 OBJS 		=	$(SRCS:.cpp=.o)
 

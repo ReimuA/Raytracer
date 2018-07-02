@@ -13,7 +13,7 @@
 class IObject {
 public:
 	IObject() = default;
-	virtual ~IObject() = 0;
+	virtual ~IObject() = default;
 
 	virtual void dump() const = 0;
 	virtual Color getColor(const Vector3f &normal) const = 0;
