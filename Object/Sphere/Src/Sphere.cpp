@@ -5,6 +5,7 @@
 #include <map>
 #include <math.h>
 #include <string>
+#include <iostream>
 #include "Sphere.hpp"
 
 IObject *createObject(const std::map<std::string, std::string> &map)
@@ -31,6 +32,11 @@ Sphere::~Sphere()
 
 void Sphere::dump() const
 {
+	std::cout << "Start of sphere dump {" << std::endl;
+	std::cout << "\tradius: " << _radius << std::endl;
+	std::string s = _perturbation ? "true" : "false";
+	std::cout << "\tpertubation: " + s << std::endl;
+	std::cout << "}" << std::endl;
 }
 
 Color Sphere::getColor(const Vector3f &normal) const

@@ -17,11 +17,14 @@ ObjectFactory::~ObjectFactory()
 
 void ObjectFactory::feed(const std::string &path)
 {
-	std::string(*fptr)();
+	IObject *(*createObject)();
+	std::string(*getObjectName)();
 	void *handler = DlHelper::dlOpen(path);
-	*(void **)(&fptr) = (std::string *)DlHelper::dlSym(handler, "getObjectName");
+	*(void **)(&createObject) = (IObject *)DlHelper::dlSym(handler, "createObject");
+	*(void **)(&getObjectName) = (std::string *)DlHelper::dlSym(handler, "getObjectName");
 
-	std::string str = fptr();
+	std::string str = getObjectName();
+	IObject *obj = createObject();
+	obj->dump();
 	std::cout << str << std::endl;
-
 }
