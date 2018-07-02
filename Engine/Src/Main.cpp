@@ -16,6 +16,10 @@ int main(int argc, char **argv)
 			return 1;
 		Parser parser;
 		parser.parseFile(std::string(argv[1]));
+		ObjectFactory ObjectFactory;
+
+		ObjectFactory.feed("../Plugins/libsphere.so");
+
 	} catch (const std::exception& e) {
 		std::cout << e.what() << std::endl;
 		return 1;

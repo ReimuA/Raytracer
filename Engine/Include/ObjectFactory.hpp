@@ -13,4 +13,7 @@ class ObjectFactory {
 public:
 	ObjectFactory();
 	~ObjectFactory();
+
+	void feed(const std::string &path);
+
 };
